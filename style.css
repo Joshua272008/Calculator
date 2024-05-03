@@ -1,0 +1,17 @@
+.calc-outer
+{
+    display: grid;
+    padding: 20px;
+    height: 555px;
+    width: 150px;
+    border: 16px solid blue;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
