@@ -2,16 +2,36 @@
 {
     display: grid;
     padding: 20px;
-    height: 555px;
-    width: 150px;
+    height: 665px;
+    width: 750px;
     border: 16px solid blue;
     box-sizing: border-box;
 }
 
+.interface
+{
+    padding: 20px;
+    height: 100px;
+    width: 680px;
+    border: 16px solid blue;
+    box-sizing: border-box;
+}
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rebeccapurple;
+    padding: 10px;
 }
+
+.grid-container > div {
+    background-color: rebeccapurple;
+    border: 16px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.small_btn {
+    width: 100px;
+    height: 50px;
+}
+
