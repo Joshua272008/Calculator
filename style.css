@@ -1,3 +1,9 @@
+body
+{
+    background-color: steelblue;
+    color:white;
+}
+
 .calc-outer
 {
     display: grid;
@@ -8,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.interface
+#interface
 {
     padding: 20px;
     height: 100px;
@@ -16,19 +22,13 @@
     border: 16px solid blue;
     box-sizing: border-box;
 }
-.grid-container {
+#grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: rebeccapurple;
+    background-color: black;
     padding: 10px;
 }
 
-.grid-container > div {
-    background-color: rebeccapurple;
-    border: 16px solid black;
-    text-align: center;
-    font-size: 30px;
-}
 
 .small_btn {
     width: 100px;
