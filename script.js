@@ -1,8 +1,10 @@
+
 function negative() {
     document.getElementById("display").innerHTML+="-";
 }
 function num0() {
     document.getElementById("display").innerHTML+="0";
+    value = 0;
 }
 function num1() {
     document.getElementById("display").innerHTML+="1";
@@ -48,6 +50,7 @@ function mod() {
 }
 function add() {
     document.getElementById("display").innerHTML+="+";
+
 }
 function sub() {
     document.getElementById("display").innerHTML+="-";
@@ -59,7 +62,22 @@ function divide() {
     document.getElementById("display").innerHTML+="/";
 }
 
-function addition()
-{
+function display(value){
+    document.getElementById("display").value+=value;
+}
+
+function calc(){
+    var x = document.getElementById("display").innerHTML;
+    var y = eval(x);
+    document.getElementById("display").innerHTML = y;
+    console.log(x)
+}
+
+function clears() {
+    document.getElementById("display").innerHTML="";
+
+}
+
+function del() {
 
 }
