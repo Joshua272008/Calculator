@@ -62,6 +62,10 @@ function divide() {
     document.getElementById("display").innerHTML+="/";
 }
 
+function sqrt(){
+    document.getElementById("display").innerHTML+="Math.sqrt(";
+}
+
 function display(value){
     document.getElementById("display").value+=value;
 }
@@ -79,5 +83,7 @@ function clears() {
 }
 
 function del() {
-
+var x = document.getElementById("display").innerHTML;
+document.getElementById("display").innerHTML = x.substring(0, x.length-1);
 }
+

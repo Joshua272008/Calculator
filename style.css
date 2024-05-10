@@ -4,22 +4,22 @@ body
     color:white;
 }
 
-.calc-outer
+#calc-outer
 {
     display: grid;
     padding: 20px;
     height: 665px;
     width: 750px;
-    border: 16px solid blue;
+    border: 10px solid #486081;
     box-sizing: border-box;
 }
 
 #interface
 {
     padding: 20px;
-    height: 100px;
+    height: 150px;
     width: 680px;
-    border: 16px solid blue;
+    border: 10px solid #486081;
     box-sizing: border-box;
 }
 #grid-container
@@ -31,10 +31,18 @@ body
 }
 
 
-.small_btn
+.btn
 {
     width: 100px;
     height: 50px;
+    background-color: steelblue;
+    text-decoration-color: white;
+    text-size-adjust: auto;
+}
+
+.btn:hover
+{
+   background-color: #bae4fd;
 }
 
 #display
