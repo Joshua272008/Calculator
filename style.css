@@ -1,7 +1,7 @@
 body
 {
     color:white;
-    background-image: url("https://t4.ftcdn.net/jpg/05/18/41/91/360_F_518419158_yXXBww2r5Z3XoutBxRX8KHNZOpPjhC03.jpg");
+    background-image: url("https://t4.ftcdn.net/jpg/02/32/92/55/360_F_232925587_st4gM8b3TJHtjjddCIUNyVyFJmZqMmn4.jpg");
     background-repeat: no-repeat;
     background-size: 2000px 1000px;
 }
@@ -40,7 +40,7 @@ body
     height: 50px;
     background-color: steelblue;
     text-decoration-color: white;
-    text-size-adjust: auto;
+    text-decoration-thickness: 15px;
 }
 
 .btn:hover
