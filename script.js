@@ -1,4 +1,4 @@
-
+let count;
 function negative() {
     document.getElementById("display").innerHTML+="-";
 }
@@ -37,7 +37,7 @@ function decimal() {
     document.getElementById("display").innerHTML+=".";
 }
 function exoponent() {
-    document.getElementById("display").innerHTML+="^";
+    document.getElementById("display").innerHTML+="**";
 }
 function leftParn() {
     document.getElementById("display").innerHTML+="(";
@@ -71,15 +71,26 @@ function display(value){
 }
 
 function calc(){
+    if(localStorage.getItem("count") > 0)
+        count =localStorage.getItem("count");
+    else
+        count=0;
+
+    count++;
+
     var x = document.getElementById("display").innerHTML;
-    var y = eval(x);
-    document.getElementById("display").innerHTML = y;
-    console.log(x)
+    var y = eval(x);document.getElementById("display").innerHTML = y;
+    localStorage.setItem("equation" + count, x);
+    localStorage.setItem("count", count);
 }
 
 function clears() {
     document.getElementById("display").innerHTML="";
 
+}
+function history(){
+    count -= 1;
+    document.getElementById("display").innerHTML = localStorage.getItem("equation" + count);
 }
 
 function del() {
